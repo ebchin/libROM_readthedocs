@@ -35,11 +35,10 @@ if read_the_docs_build:
 
     call('mkdir ../build/doxygen', shell=True)
     call('mkdir ../build/doxygen/doxygen', shell=True)
-    call('mv ../build/html/* ../build/doxygen/doxygen', shell=True)
+    call('mv ../build/html/* ../build/doxygen', shell=True)
 
     html_extra_path = ['../build/doxygen']
     print(os.listdir('../build/doxygen'))
-    print(os.listdir('../build/doxygen/doxygen'))
 
 
 
