@@ -10,10 +10,4 @@ Welcome to libROM's documentation!
    :caption: Contents:
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+'Load doxygen documentation <https://librom-readthedocs.readthedocs.io/en/latest/doxygen>'
