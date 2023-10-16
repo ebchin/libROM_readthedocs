@@ -10,4 +10,4 @@ Welcome to libROM's documentation!
    :caption: Contents:
 
 
-'Load doxygen documentation <https://librom-readthedocs.readthedocs.io/en/latest/doxygen>'
+`Load doxygen documentation <https://librom-readthedocs.readthedocs.io/en/latest/doxygen>`_
