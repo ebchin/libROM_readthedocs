@@ -25,7 +25,7 @@ if read_the_docs_build:
     #Modify Doxyfile for ReadTheDocs compatibility
     with open('../Doxyfile', 'r') as f:
         fdata = f.read()
-    fdata = fdata.replace('OUTPUT_DIRECTORY       = docs', 'OUTPUT_DIRECTORY       = docs/build')
+    fdata = fdata.replace('OUTPUT_DIRECTORY       = docs', 'OUTPUT_DIRECTORY       = docs/build/doxygen')
     with open('../Doxyfile', 'w') as f:
         f.write(fdata)
 
@@ -33,15 +33,11 @@ if read_the_docs_build:
     from subprocess import call
     call('cd ../.. ; doxygen docs/Doxyfile', shell=True)
 
-    call('mkdir ../build/doxygen', shell=True)
-    call('mkdir ../build/doxygen/doxygen', shell=True)
-    call('mv ../build/html/* ../build/doxygen/doxygen', shell=True)
-
+    # Copy doxygen subfolder to root
     html_extra_path = ['../build/doxygen']
-    print(os.listdir('../build/doxygen'))
-    print(os.listdir('../build/doxygen/doxygen'))
 
-
+    # The subfolder is copied to the root after the build completes in
+    # the .readthedocs.yaml file
 
 # -- Project information -----------------------------------------------------
 
