@@ -33,7 +33,8 @@ if read_the_docs_build:
     from subprocess import call
     call('cd ../.. ; doxygen docs/Doxyfile', shell=True)
 
-    html_extra_path = ['../html']
+    html_extra_path = ['../build/html']
+    print(os.listdir('../build/html'))
 
 
 
