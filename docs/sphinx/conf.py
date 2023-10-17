@@ -35,6 +35,7 @@ if read_the_docs_build:
 
     # Copy doxygen subfolder to root
     html_extra_path = ['../build/doxygen']
+    print(os.listdir('../build/doxygen'))
 
     # The subfolder is copied to the root after the build completes in
     # the .readthedocs.yaml file
